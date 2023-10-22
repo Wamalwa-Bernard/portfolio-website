@@ -39,6 +39,20 @@ p {
   color: #465b52;
   margin: 15px 0 20px 0;
 }
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: none;
+}
   /* Header start */
   #header{
     display: flex;
@@ -46,7 +60,7 @@ p {
     justify-content: space-between;
     padding: 20px 80px;
     background-color: #1a1621;
-    box-shadow: 0 5PX 15PX rgba(0, 0, 0, 0.06);
+    box-shadow: 0 5PX 15PX rgba(117, 82, 82, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -84,12 +98,10 @@ p {
     bottom: -4px;
     left: 20px;
   }
-  
+  /* Hero start */
   #hero{
-    /background-image: url(img/w1.jpeg);
-    background-color: #121212;
+    background-color: #E3E6F3;
     width: 100%;
-    height: 90vh;
     background-size: cover;
     background-position: top 25% right 50%;
     padding: 0 80px;
@@ -100,10 +112,11 @@ p {
 
   #hero .description {
     width: 50%;
+  flex-wrap: wrap;
   }
 
   #hero .description p{
-    color: #edeced;
+    color: #088178;
     font-size: 74px;
   }
 
@@ -117,11 +130,41 @@ p {
 
   #hero .description .small{
     font-size: 24px;
-    color: #908d;
+    color: #ef3636;
   }
 
   #hero .description .small-description{
     font-size: 18px;
-    color: aqua;
+    font-weight: bold;
+    color: #908d;
     line-height: 30px;
   }
+
+  #hero .profile img{
+    border-radius: 10%;
+    padding: 10px 5px;
+  }
+
+  #hero .social{
+    margin-top: 20px;
+   
+  }
+
+  #hero .social i{
+    color: #465b52;
+    padding-right: 10px;
+    cursor: pointer;
+
+  }
+  #hero .normal{
+    margin-top: 20px;
+    background: #088178;
+  border: 1px solid #088178;
+  transition: 0.2s ease;
+  }
+
+  #hero .normal:hover{
+    color: #fff;
+  }
+
+ 
