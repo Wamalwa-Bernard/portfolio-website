@@ -8,7 +8,11 @@
 
 body {
     width: 100%;
-  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
   /* Global Styles */
 
@@ -26,7 +30,7 @@ h2 {
 
 h4 {
   font-size: 20px;
-  color: #222;
+  color: #edeced;
 }
 
 h6 {
@@ -100,7 +104,7 @@ button.normal{
   }
   /* Hero start */
   #hero{
-    background-color: #E3E6F3;
+    background-color: #0a3622;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 50%;
@@ -143,6 +147,7 @@ button.normal{
   #hero .profile img{
     border-radius: 10%;
     padding: 10px 5px;
+    
   }
 
   #hero .social{
@@ -159,12 +164,98 @@ button.normal{
   #hero .normal{
     margin-top: 20px;
     background: #088178;
-  border: 1px solid #088178;
-  transition: 0.2s ease;
+    border: 1px solid #088178;
+    transition: 0.2s ease;
   }
 
   #hero .normal:hover{
     color: #fff;
   }
+
+  /* banner section */
+  #banner{
+    padding-top: 50px;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    
+  }
+  #banner .profile img{
+    margin-left: 200px;
+    height: 70vh;
+    border-radius: 32px 64px;
+    
+  }
+
+  #banner .about{
+    margin-left: 100px;
+    padding-right: 10px;
+    border: 1px solid #edeced;
+    border-radius: 10px 100px;
+    
+  }
+
+  #banner .about h4{
+    margin: 30px;
+  }
+
+  #banner .about p{
+    color: #d1e7dd;
+    line-height: 30px;
+    margin: 30px;
+  }
+
+  #banner .about h4{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #banner .about span{
+    color: #ee6723;
+  }
+
+  /* projects section */
+
+  #projects{
+    background-color: #465b52;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 auto;
+    
+  
+  }
+  #projects .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    flex: 0 1 calc(33.33% - 20px);
+    background-color: #d1e7dd;
+  }
+
+  #projects .pro img{
+    border-radius: 20px;
+    width: 100%;
+    max-height: 60vh;
+    align-items: center;
+    
+  }
+
+  #projects .pro .des{
+    text-align: start;
+    padding: 10px 0;
+ }
+ #projects .pro .des p{
+  color: #1a1621;
+ }
 
  
