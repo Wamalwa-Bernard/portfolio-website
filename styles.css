@@ -274,5 +274,26 @@ button.normal{
   text-align: center;
   z-index: 1;
 }
+/* Feature section */
+#feature{
+  background-color: #041e42;
+}
+
+#feature h3{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 34px;
+  color: #d1e7dd;
+}
+#feature .stack{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin:0 100px;
+  padding: 20px;
+}
+
+
 
  
