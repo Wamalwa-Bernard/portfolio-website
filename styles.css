@@ -8,6 +8,7 @@
 
 body {
     width: 100%;
+    background-color: #d1e7dd;
 }
 
 html {
@@ -104,7 +105,7 @@ button.normal{
   }
   /* Hero start */
   #hero{
-    background-color: #0a3622;
+    background-color: #121121;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 50%;
@@ -224,6 +225,7 @@ button.normal{
     flex-wrap: wrap;
     padding: 20px;
     margin: 0 auto;
+    width: 80%;
     
   
   }
@@ -231,15 +233,15 @@ button.normal{
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
-    border: 1px solid #cce7d0;
+    border: 1px solid #121121;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    box-shadow: 20px 20px 30px #121121;
     margin: 15px 0;
-    transition: 0.2s ease;
+    transition: transform 0.2s;
     position: relative;
     flex: 0 1 calc(33.33% - 20px);
-    background-color: #d1e7dd;
+    background-color: #121121;
   }
 
   #projects .pro img{
@@ -254,8 +256,23 @@ button.normal{
     text-align: start;
     padding: 10px 0;
  }
+
  #projects .pro .des p{
-  color: #1a1621;
+  display: none;
  }
+
+ #projects .pro:hover p {
+  display: block; /* Show the paragraph text on hover */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #382bf0; /* Text color on hover */
+  padding: 5px;
+  padding-top: 2px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
 
  
