@@ -345,17 +345,24 @@ button.normal{
 #form-details{
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  align-items: center;
+  margin: 0 auto;
   padding: 80px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #121121;
+  background-color: #041e42;
 
 }
 
 #form-details form{
-  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+#form-details h2,
+#form-details span{
+  padding: 15px 0;
+  color: #d1e7dd;
 }
 #form-details form input,
 #form-details form textarea{
@@ -368,4 +375,113 @@ button.normal{
 #form-details form button{
   background-color: #088178;
   color: #fff;
+}
+
+#form-details .col,
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+#form-details h4{
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+#form-details p{
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  line-height: 60px;
+  color: #ec544e;
+}
+
+#form-details p strong{
+  color: yellow;
+}
+
+#form-details .col .follow .icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* footer section */
+footer{
+  background-image: url(img/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #121121;
+}
+
+footer .summary{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #041e42;
+  padding-left: 20px;
+}
+#newsletter h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 10px;
+}
+#newsletter p{
+  font-size: 14px;
+  font-weight:600;
+  color: #818ea0;
+  padding-right: 10px;
+}
+#newsletter p span{
+  color: #ffbd27;
+}
+
+#newletter .form{
+  display: flex;
+  padding-left: 10px;
+  
+}
+#newsletter .form input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 50%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletter .form button{
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+footer .summary .col a{
+  padding-top: 10px;
+  text-decoration: none;
+  line-height: 28px;
+  color: #818ea0;
+}
+
+footer .summary .col a:hover{
+  background-color: #088178;
+  color: #d1e7dd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+footer .copyright{
+  text-align: center;
 }
