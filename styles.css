@@ -9,6 +9,7 @@
 body {
     width: 100%;
     background-color: #d1e7dd;
+    overflow: auto;
 }
 
 html {
@@ -117,10 +118,22 @@ button.normal{
     width: 100%;
     background-size: cover;
     background-position: top 25% right 50%;
-    padding: 0 80px;
+    padding: 5px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  #hero .aboutIntro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #hero .profile img{
+    border-radius: 10%;
+    padding: 10px 5px;
+    
   }
 
   #hero .description {
@@ -131,6 +144,7 @@ button.normal{
   #hero .description p{
     color: #088178;
     font-size: 74px;
+    
   }
 
   #hero .description p span{
@@ -153,11 +167,7 @@ button.normal{
     line-height: 30px;
   }
 
-  #hero .profile img{
-    border-radius: 10%;
-    padding: 10px 5px;
-    
-  }
+  
 
   #hero .social{
     margin-top: 20px;
@@ -175,6 +185,7 @@ button.normal{
     background: #088178;
     border: 1px solid #088178;
     transition: 0.2s ease;
+    padding-bottom: 15px;
   }
 
   #hero .normal:hover{
@@ -187,22 +198,25 @@ button.normal{
     background-color: #262626;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-right: 20px;
     
   }
   #banner .profile img{
     margin-left: 200px;
-    height: 70vh;
     border-radius: 32px 64px;
     
   }
 
   #banner .about{
-    margin-left: 100px;
+    width: 50%;
     padding-right: 10px;
     border: 1px solid #edeced;
     border-radius: 10px 100px;
-    
+    margin-bottom: 15px;
+    align-items: center;
+    margin-left: 10px;
   }
 
   #banner .about h4{
@@ -346,6 +360,7 @@ button.normal{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 80px;
   border: 1px solid #121121;
@@ -354,9 +369,7 @@ button.normal{
 }
 
 #form-details form{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 50%;
 }
 
 #form-details h2,
@@ -383,6 +396,7 @@ footer .col{
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 #form-details h4{
@@ -418,6 +432,7 @@ footer .summary{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #newsletter{
@@ -484,4 +499,67 @@ footer .summary .col a:hover{
 
 footer .copyright{
   text-align: center;
+}
+
+/* Medium screen devices */
+
+@media(max-width: 799px) {
+  
+  /* hero section */
+
+#hero{
+  background-image: url(img/w1.jpeg);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-size: cover;
+  background-color: #121121;
+}
+#hero .aboutIntro .description{
+    width: 100%;
+}
+#hero .aboutIntro .description .small{
+  color: #088178;
+}
+
+#hero .aboutIntro .description .small-description{
+  color: #d1e7dd;
+}
+#hero .aboutIntro .description .intro{
+  font-size: 24px;
+  color: #d1e7dd;
+}
+#hero .aboutIntro .profile{
+  display: none;
+}
+
+/* banner section */
+#banner {
+  background-color: #121121;
+}
+#banner .profile img {
+  display: none;
+}
+
+#banner .about {
+  width: 100%;
+}
+/* projects section */
+#projects {
+  background-color: #465b52;
+  width: 100%;
+}
+
+/* contact us section */
+#form-details form{
+  width: 100%;
+}
+
+#form-details .col, footer .col {
+  padding-top: 15px;
+}
+
+/* footer section */
+footer{
+  width: 100%;
+}
 }
