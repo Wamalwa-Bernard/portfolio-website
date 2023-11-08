@@ -379,6 +379,10 @@ button.normal{
 }
 #form-details form button{
   background-color: #088178;
+  color: #000;
+}
+
+#form-details form button:hover{
   color: #fff;
 }
 
